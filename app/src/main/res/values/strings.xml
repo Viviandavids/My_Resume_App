@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Resume App</string>
+    <string name="choose_theme_text">Choose Theme</string>
+</resources>
