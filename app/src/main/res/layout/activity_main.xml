@@ -105,12 +105,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="20sp"
-            android:text="I am an intermediate Mobile Application developer, Who is always looking for new challenges. I am so a final year student at the unversity of Lagos, Nigeria. I am also looking forward to finishing the HNG9" />
+            android:text="I am an intermediate Mobile Application developer, Who is always looking for new challenges. I am also a final year student at the unversity of Lagos, Nigeria. I am also looking forward to finishing the HNG9" />
         <TextView
             android:id="@+id/skills"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="I provide the following services"
+            android:text="I provide the following services:"
             android:layout_margin="10dp"
             android:gravity="center"
             android:textSize="20sp"
