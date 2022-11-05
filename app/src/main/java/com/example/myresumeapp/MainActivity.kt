@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity() {
+    //declaration of the buttons
     private lateinit var linkedin: ImageButton
     private lateinit var twitter: ImageButton
     private lateinit var github: ImageButton
@@ -21,19 +22,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        SocialMediaLink()
+        socialMediaLink()
 
        chooseThemeDialog()
     }
 
-    private fun SocialMediaLink(){
+    private fun socialMediaLink(){
      // get reference to button
      linkedin = findViewById(R.id.linkedIn)
      twitter = findViewById(R.id.twitter)
      github = findViewById(R.id.github)
      instagram = findViewById(R.id.instagram)
 
-        //set on click listener for the button
+        //set on click listener for the button. This allows the buttons to respond upon clicking on it
         linkedin.setOnClickListener {
             val i =
                 Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/viviandavids/"))
@@ -59,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
      }
 
+    // This allows you to change the theme to either dark mode or light mode
     private fun chooseThemeDialog() {
         changeTheme = findViewById(R.id.changeTheme)
         val builder = AlertDialog.Builder(this)
